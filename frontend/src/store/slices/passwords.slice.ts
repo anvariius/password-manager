@@ -24,6 +24,7 @@ export enum ModalStatus {
 
 const newPassword: Password = {
   id: "new",
+  userId: 1,
   folderId: null,
   service: "",
   login: "",
@@ -37,6 +38,7 @@ const initialState: initialState = {
   passwords: [
     {
       id: 1,
+      userId: 1,
       folderId: null,
       service: "vk",
       login: "vk",

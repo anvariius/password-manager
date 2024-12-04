@@ -2,7 +2,28 @@ import PasswordsList from "./components/passwordsList/PasswordsList.tsx";
 import Folders from "./components/folders/Folders.tsx";
 import PasswordModal from "./components/passwordModal/PasswordModal.tsx";
 
-function App() {
+import axios from "axios";
+
+async function App() {
+  // const pass = await axios.post(
+  //   "http://localhost:5555/add-password",
+  //   {
+  //     userId: 1,
+  //     folderId: null,
+  //     service: "vk",
+  //     login: "vk",
+  //     password: "password",
+  //     favorite: false,
+  //     lastChange: "2024-10-23T00:00:00.000Z",
+  //     status: "ACTIVE",
+  //   },
+  //   {
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //   },
+  // );
+  // console.log(pass);
   return (
     <>
       <div className="container mx-auto">

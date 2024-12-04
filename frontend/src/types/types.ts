@@ -1,15 +1,15 @@
 export type Id = number | string | null;
 
 export enum PasswordStatus {
-  "REMOVED",
-  "ACTIVE",
-  "EXPIRED",
+  "REMOVED" = "REMOVED",
+  "ACTIVE" = "ACTIVE",
+  "EXPIRED" = "EXPIRED",
 }
 
-export type FolderId = Id | "all" | "favorite";
+export type FolderId = Id;
 
 export type Folder = {
-  id: FolderId;
+  id: Id;
   name: string;
   icon: FolderIcons;
 };
@@ -18,7 +18,8 @@ export type FolderIcons = "VscFolderOpened" | "VscHeartFilled" | "VscCode";
 
 export type Password = {
   id: Id;
-  folderId: FolderId;
+  userId: Id;
+  folderId: Id;
   service: string;
   login: string;
   password: string;
